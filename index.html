@@ -6,7 +6,7 @@ function function1() {
   var AGOP = document.getElementById("AGOP").value;
   var magicword = document.getElementById("magicword").value;
   var serviceid = document.getElementById("box1").value;
-  var url = 'https://us-central1-ultimate-choir-298915.cloudfunctions.net/clone_fs ?url=' + serviceid + '&magicword' + magicword + '&AGOU' + AGOU + '&AGOP' + AGOP;
+  var url = 'https://us-central1-ultimate-choir-298915.cloudfunctions.net/clone_fs?serviceid=' + serviceid + '&magicword=' + magicword + '&AGOU=' + AGOU + '&AGOP=' + AGOP;
   var el = document.getElementById('iframe1');
   el.src = url;
 }
