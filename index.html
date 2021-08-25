@@ -13,7 +13,7 @@ function function1() {
 //--></script>
 </head>
 <body><font face="verdana, arial">
-  <h2>Clone a public feature service into your ArcGIS Online account</h2>
+  <h2>Clone a public feature service or basic webmap</h2>
 		
 <div style="width: 700px;"><font size="-1">
 Enter the public feature service Id. You will also need the magicword from the application administrator, prior to submitting the form below.
@@ -24,14 +24,15 @@ Enter the public feature service Id. You will also need the magicword from the a
 	A few important notes:
 	<UL>
 		<LI>Your username is case-sensitive.
-		<LI>Expect a response from the server (below) to take up to 90 seconds.  This app doesn't respond instantly.
+		<LI>Expect a response from the server (below) to take up to two and a half minutes.  This app doesn't respond instantly.
 	</ul>
 	A few sample feature service ids to considering using while testing:
 	<ul>
-	<LI><a href="https://arcgis.com/home/item.html?id=0337028a68f74a31b84721786ce65235" target="new">Countries</a>, service id: 0337028a68f74a31b84721786ce65235</li>
-	<LI><a href="https://education.maps.arcgis.com/home/item.html?id=aa0f72033279427f89280fd55d743bbd" target="new">U.S. Rivers</a>, service id: aa0f72033279427f89280fd55d743bbd
-	<LI><a target="new" href="https://arcgis.com/home/item.html?id=c4d0fd8737d447c1b174489c29041961">World cities over 300k</a>, service id: c4d0fd8737d447c1b174489c29041961</li>
-	</ul>
+	<LI>Feature service: <a href="https://arcgis.com/home/item.html?id=0337028a68f74a31b84721786ce65235" target="new">Countries</a>, service id: 0337028a68f74a31b84721786ce65235</li>
+	<LI>Feature service: <a href="https://education.maps.arcgis.com/home/item.html?id=aa0f72033279427f89280fd55d743bbd" target="new">U.S. Rivers</a>, service id: aa0f72033279427f89280fd55d743bbd
+	<LI>Feature service: <a target="new" href="https://arcgis.com/home/item.html?id=c4d0fd8737d447c1b174489c29041961">World cities over 300k</a>, service id: c4d0fd8737d447c1b174489c29041961</li>
+		<li>Map: <a target="new" href="http://esriurl.com/fourgeoinquiry1">Elementary Biomes</a>, map id: 33d2aaf5bdf84ccf876eb781876e8c2a</li>
+		</ul>
 </div>
 <table width=700><tr><td>		
 
@@ -40,7 +41,7 @@ Enter the public feature service Id. You will also need the magicword from the a
 Magic word: <input type="text" id="magicword" name="AGOU"> <br />		
 		Target ArcGIS Online username: <input type="text" id="AGOU" name="AGOU"> <br />
     Target ArcGIS Online password  <input type="text" id="AGOP" name="AGOP"> <br />
-Feature service id: <input type="text" id="box1" name="box1" onkeydown = "if (event.keyCode == 13) document.getElementById('myButton').click()"/>
+Service id: <input type="text" id="box1" name="box1" onkeydown = "if (event.keyCode == 13) document.getElementById('myButton').click()"/>
 <br /><input type='button' id="myButton" value="Start clone" onclick="javascript:function1();"/> &nbsp;&nbsp;
 <input type="button" value="Clear output below" onclick="javascript:document.getElementById('iframe1').src='clone_fs.html';" >
  </form>
